@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^currency/(.*)$ currency.php?code=$1 [NC,L]
+RewriteRule ^add/(.*)$ add.php?code=$1 [NC,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
